@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Open Software License (OSL 3.0)
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/osl-3.0.php
+ *
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to support@meanbee.com so we can send you a copy immediately.
+ *
+ * @category   Meanbee
+ * @package    Meanbee_Statistics
+ * @copyright  Copyright (c) 2009 Meanbee Internet Solutions Limited (http://www.meanbee.com)
+ * @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ * @version    $Id$
+ */
+-->
+<config>
+    <modules>
+        <Meanbee_Statistics>
+            <version>1.0</version>
+        </Meanbee_Statistics>
+    </modules>
+    <global>
+        <models>
+            <meanbee_statistics>
+                <class>Meanbee_Statistics_Model</class>
+            </meanbee_statistics>
+        </models>
+        <helpers>
+            <meanbee_statistics>
+                <class>Meanbee_Statistics_Helper</class>
+            </meanbee_statistics>
+        </helpers>
+        <events>
+            <adminhtml_controller_action_predispatch_start>
+                <observers>
+                    <meanbee_statistics_observer>
+                        <type>singleton</type>
+                        <class>meanbee_statistics/observer</class>
+                        <method>observe</method>
+                    </meanbee_statistics_observer>
+                </observers>
+            </adminhtml_controller_action_predispatch_start>
+        </events>
+        <statistics>
+            <meanbee_statistics>
+                <hello>world</hello>
+                <license><![CDATA[askhaisdhkadhkahsdkjads]]></license>
+            </meanbee_statistics>
+            <another>
+                <world>hello</world>
+            </another>
+        </statistics>
+    </global>
+    <default>
+        <admin>
+            <statistics>
+                <active>1</active>
+                <debug>0</debug>
+            </statistics>
+        </admin>
+    </default>
+</config>

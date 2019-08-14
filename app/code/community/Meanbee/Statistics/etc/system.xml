@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Open Software License (OSL 3.0)
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/osl-3.0.php
+ *
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to support@meanbee.com so we can send you a copy immediately.
+ *
+ * @category   Meanbee
+ * @package    Meanbee_Statistics
+ * @copyright  Copyright (c) 2009 Meanbee Internet Solutions Limited (http://www.meanbee.com)
+ * @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ * @version    $Id$
+ */
+-->
+<config>
+    <sections>
+        <admin>
+            <groups>
+                <statistics translate="label" module="meanbee_statistics">
+                    <label>Statistics Collection</label>
+                    <frontend_type>text</frontend_type>
+					<sort_order>1000</sort_order>
+					<show_in_default>1</show_in_default>
+                    <comment><![CDATA[
+<div style="border:1px solid #D6D6D6;background-color:white; padding:10px; margin-bottom:5px;">
+    The aim of the Meanbee_Statistics module is allow module providers an opportunity to truly gauge the
+    popularity of their module by gaining access to daily usage statistics.  If you wish to fully disable
+    the anonymous Magento installation and configuration statistics collected by 
+    <a href="http://www.meanbee.com">Meanbee Internet Solutions Limited</a> then please mark "Enabled"
+    as "No" below and save.
+</div>
+]]></comment>
+                    <fields>
+                        <active translate="label">
+                            <label>Enabled</label>
+                            <frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>10</sort_order>
+							<show_in_default>1</show_in_default>
+                        </active>
+                        <debug translate="label">
+                            <label>Debug Mode Enabled</label>
+                            <frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>20</sort_order>
+							<show_in_default>1</show_in_default>
+                        </debug>
+                    </fields>
+                </statistics>
+            </groups>
+        </admin>
+    </sections>
+</config>

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+    <name>Meanbee_Statistics</name>
+    <version>1.0</version>
+    <stability>stable</stability>
+    <license uri="http://www.opensource.org/licenses/osl-3.0.php">Open Software License ("OSL") v. 3.0</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Collect arbitrary, module developer defined, usage statistics from Magento installations worldwide.</summary>
+    <description>Not, generally, for the public but aimed at module developers.  Collect arbitrary, module developer defined, usage statistics from Magento installations worldwide.  Statistics are accessible for Meanbee's interface which is yet to be built.</description>
+    <notes>Initial release.</notes>
+    <authors><author><name>Nick Jones</name><user>auto-converted</user><email>nick.jones@meanbee.com</email></author></authors>
+    <date>2009-09-13</date>
+    <time>19:38:36</time>
+    <contents><target name="magecommunity"><dir name="Meanbee"><dir name="Statistics"><dir name="etc"><file name="config.xml" hash="d028d9d77bc314af19f08bf14695801d"/><file name="system.xml" hash="219ba45747a4213e532bb3b540fc1911"/></dir><dir name="Helper"><file name="Data.php" hash="72028219c7fbfb65092cda65eb6942ae"/></dir><dir name="Model"><file name="Observer.php" hash="000e12467289bf4bdece6b6e54fe31ba"/></dir><file name="LICENSE.txt" hash="ab2517743851ba70b89c26015bf60f42"/></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Meanbee_Statistics.xml" hash="c0394dca79bfe53c993dfe1e95e728d0"/></dir></target></contents>
+    <compatible/>
+    <dependencies/>
+</package>

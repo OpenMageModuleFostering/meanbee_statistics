@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/Meanbee_Statistics",
+    "type": "magento-module",
+    "license": "Open-Software-License-("OSL")-v.-3.0",
+    "homepage": "",
+    "description": "Collect arbitrary, module developer defined, usage statistics from Magento installations worldwide.",
+    "authors": [
+    {
+        "name": "Nick Jones",
+        "email": "nick.jones@meanbee.com"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}
